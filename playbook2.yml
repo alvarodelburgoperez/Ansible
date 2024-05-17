@@ -1,0 +1,21 @@
+---
+- name: Crear entorno virtual en Python
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Instalar python3-venv
+      apt:
+        name: python3-venv
+        state: present
+      become: yes
+
+    - name: Crear directorio para el entorno virtual
+      file:
+        path: /ansible/entorno_ansible
+        state: directory
+      become: yes
+
+    - name: Crear entorno virtual con Python 3.7
+      command: python3 -m venv /ansible/entorno_ansible
+      become: yes

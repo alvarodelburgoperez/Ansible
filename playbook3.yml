@@ -1,0 +1,7 @@
+---
+- name: Ejecutar script de Python
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Ejecutar script de Python
+      command: python3 entorno_ansible/ejecutar.py

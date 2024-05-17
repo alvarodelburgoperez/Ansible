@@ -1,0 +1,15 @@
+---
+- name: Instalar nano y Python 
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Instalar nano
+      package:
+        name: nano
+        state: present
+
+    - name: Instalar Python
+      apt:
+        name: python3
+        state: present
