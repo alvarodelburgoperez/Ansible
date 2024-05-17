@@ -14,3 +14,11 @@ Ejecutar un archivo que imprima hola usando Ansible y Docker
 
 - Tercer fichero .yml
   - Ejecutar el .py que imprime "Hola"
+
+
+## Comandos utilizados:
+
+docker run -v %cd%:/ansible ansible-container ansible-playbook playbook.yml
+docker run -v %cd%:/ansible ansible-container ansible-playbook playbook2.yml
+docker run -v %cd%:/ansible ansible-container ansible-playbook playbook3.yml
+
