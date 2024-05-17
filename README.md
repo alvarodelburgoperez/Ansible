@@ -18,7 +18,7 @@ Ejecutar un archivo que imprima hola usando Ansible y Docker
 
 ## Comandos utilizados:
 
-docker run -v %cd%:/ansible ansible-container ansible-playbook playbook.yml
-docker run -v %cd%:/ansible ansible-container ansible-playbook playbook2.yml
-docker run -v %cd%:/ansible ansible-container ansible-playbook playbook3.yml
+- docker run -v %cd%:/ansible ansible-container ansible-playbook playbook.yml
+- docker run -v %cd%:/ansible ansible-container ansible-playbook playbook2.yml
+- docker run -v %cd%:/ansible ansible-container ansible-playbook playbook3.yml
 
