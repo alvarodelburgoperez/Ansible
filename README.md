@@ -1,8 +1,8 @@
 # Ansible
 
-## Concepto del proyecto:
+## Descripción del proyecto:
 
-Crear 3 ficheros .yml:
+Ejecutar un archivo que imprima hola usando Ansible y Docker
 
 
 - Primer fichero: .yml:
